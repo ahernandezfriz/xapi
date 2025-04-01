@@ -67,12 +67,7 @@ header( 'X-XSS-Protection: 1; mode=block' );
 <body>
     <h2>Clasifica los elementos en Software o Hardware</h2>
     <div id="items" class="container">
-        <div class="drag-item" draggable="true" data-id="Mouse" data-type="hardware">Mouse</div>
-        <div class="drag-item" draggable="true" data-id="Teclado" data-type="hardware">Teclado</div>
-        <div class="drag-item" draggable="true" data-id="Monitor"  data-type="hardware">Monitor</div>
-        <div class="drag-item" draggable="true" data-id="Word"  data-type="software">Word</div>
-        <div class="drag-item" draggable="true" data-id="Excel"  data-type="software">Excel</div>
-        <div class="drag-item" draggable="true"data-id="Chrome"  data-type="software">Chrome</div>
+       
     </div>
     <div class="container">
         <div id="hardware" class="drop-zone">Hardware</div>
