@@ -1,14 +1,20 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
 
-    const username = "1d1851feeb1c0568654c4b6fbdd8195253718d552ca71f1af8ab3940e16a4fb6";
-    const password = "f718950afdb18fb31a425072b4dfa8240fb8df570436facf40a942e17fc6bac5";
+    //const username = "1d1851feeb1c0568654c4b6fbdd8195253718d552ca71f1af8ab3940e16a4fb6";
+    //const password = "f718950afdb18fb31a425072b4dfa8240fb8df570436facf40a942e17fc6bac5";
+
+    const username = "my_key";
+    const password = "my_secret";
+
 
     //const username= 'KLcGUfRtvVFQFEMUXcE';
     //const password= '_Wx46NC9J_BT-4yUmMA';
     
     var conf = {
-        endpoint: 'https://cloud.scorm.com/lrs/VHZKZQF1QN/sandbox/statement/',
+        //endpoint: 'https://cloud.scorm.com/lrs/VHZKZQF1QN/sandbox/statement/',
+        endpoint: 'https://eol.cfrd.cl/lrs-proxy',
+        
         user: username,
         password: password,
         headers: {

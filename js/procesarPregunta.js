@@ -6,6 +6,8 @@
 const username= 'KLcGUfRtvVFQFEMUXcE';
 const password= '_Wx46NC9J_BT-4yUmMA';
 
+
+
 const xapiConfig = {
     endpoint: 'https://cloud.scorm.com/lrs/VHZKZQF1QN/sandbox/statement/',
     user: username,

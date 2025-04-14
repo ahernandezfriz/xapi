@@ -105,15 +105,15 @@ function verificarRespuestas() {
         });
 
 
-         // Imprime los resultados en la consola para depuración
-         console.log("Resultados de la verificación:", results);
-    console.log("Resultados de la verificación:", results.every(r => r.correct));
+        // Imprime los resultados en la consola para depuración
+        console.log("Resultados de la verificación:", results);
+        console.log("Resultados de la verificación:", results.every(r => r.correct));
 
         document.getElementById("feedback").innerText = allCorrect ? "¡Todo correcto!" : "Algunas respuestas son incorrectas.";
     
     // Envía los resultados a xAPI
 
-    //enviarA_xAPI(results);
+    enviarA_xAPI(results);
 }
 
 // Función para enviar los resultados a un LRS usando xAPI
@@ -123,16 +123,16 @@ function enviarA_xAPI(results) {
     const password= '_Wx46NC9J_BT-4yUmMA';
 
     const xapiConfig = {
-    endpoint: 'https://cloud.scorm.com/lrs/VHZKZQF1QN/sandbox/statement/',
-    user: username,
-    password: password,
-    headers: {
-        'Content-Type': 'application/json',
-        'X-Experience-API-Version': '1.0.3',
-        'Accept': 'application/json',
-        'Cache-Control': 'no-cache',
-        'Authorization': 'Basic ' + btoa(username + ':' + password)
-    }
+        endpoint: 'https://cloud.scorm.com/lrs/VHZKZQF1QN/sandbox/statement/',
+        user: username,
+        password: password,
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Experience-API-Version': '1.0.3',
+            'Accept': 'application/json',
+            'Cache-Control': 'no-cache',
+            'Authorization': 'Basic ' + btoa(username + ':' + password)
+        }
     };
 
     // Inicializar la configuración de xAPIWrapper
